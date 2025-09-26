@@ -139,7 +139,7 @@
 // src/components/QuizSelection.jsx
 import { useState, useEffect } from "react";
 import { syllabus } from "../syllabus";
-import Quiz from "./Quiz";
+import Quiz from "./quiz";
 import Sidebar from "./sidebar";
 import { motion, AnimatePresence } from "framer-motion";
 import cartoonBoy from "../assets/cartoon2.jpg"; // apna cartoon image yahan daalna
