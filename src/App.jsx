@@ -124,7 +124,7 @@ import { Routes, Route } from "react-router-dom";
 import Login from "./components/login";
 import Signup from "./components/signup";
 import QuizSelection from "./components/quizSelection";
-import Quiz from "./components/Quiz";
+import Quiz from "./components/quiz";
 import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/profile";
 import ForgotPassword from "./pages/forgot-password";
