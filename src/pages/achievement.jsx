@@ -6,7 +6,7 @@ const Achievements = () => {
   useEffect(() => {
     const fetchAchievements = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/achievements", {
+        const res = await fetch("https://ssc-backend-c1qi.onrender.com/api/achievements", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

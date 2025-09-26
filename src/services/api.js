@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api"; // backend URL
+const API_URL = "https://ssc-backend-c1qi.onrender.com/api"; // backend URL
 
 // helper: fetch with error handling
 const request = async (url, options = {}) => {

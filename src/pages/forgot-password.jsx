@@ -9,7 +9,7 @@ function ForgotPassword() {
 
   const handleRequestOtp = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/user/request-otp", { email });
+      const res = await axios.post("https://ssc-backend-c1qi.onrender.com/api/user/request-otp", { email });
       alert(res.data.message);
       setStep(2);
     } catch (err) {
@@ -19,7 +19,7 @@ function ForgotPassword() {
 
   const handleChangePassword = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/user/change-password", {
+      const res = await axios.post("https://ssc-backend-c1qi.onrender.com/api/user/change-password", {
         email,
         otp,
         newPassword,

@@ -15,7 +15,7 @@ function Profile() {
   const fetchProfile = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:5000/api/auth/me", {
+      const res = await axios.get("https://ssc-backend-c1qi.onrender.com/api/auth/me", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setUser(res.data);
@@ -45,7 +45,7 @@ function Profile() {
     try {
       setError("");
       const res = await axios.put(
-        "http://localhost:5000/api/user/update",
+        "https://ssc-backend-c1qi.onrender.com/api/user/update",
         { ...formData },
         { headers: { Authorization: `Bearer ${token}` } }
       );

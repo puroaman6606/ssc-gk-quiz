@@ -7,7 +7,7 @@ const Notifications = () => {
   useEffect(() => {
     const fetchNotifications = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/notifications", {
+        const res = await fetch("https://ssc-backend-c1qi.onrender.com/api/notifications", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -25,7 +25,7 @@ const Notifications = () => {
   // Mark notification as read
   const markRead = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/notifications/${id}/read`, {
+      const res = await fetch(`https://ssc-backend-c1qi.onrender.com/api/notifications/${id}/read`, {
         method: "PATCH",
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });

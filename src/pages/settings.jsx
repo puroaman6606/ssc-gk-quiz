@@ -14,7 +14,7 @@ const Settings = () => {
   useEffect(() => {
     const fetchPreferences = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/settings/preferences", {
+        const res = await fetch("https://ssc-backend-c1qi.onrender.com/api/settings/preferences", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -48,7 +48,7 @@ const Settings = () => {
   const handlePasswordChange = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/settings/password", {
+      const res = await fetch("https://ssc-backend-c1qi.onrender.com/api/settings/password", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ const Settings = () => {
   // Handle preferences update
   const handlePreferencesChange = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/settings/preferences", {
+      const res = await fetch("https://ssc-backend-c1qi.onrender.com/api/settings/preferences", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -86,7 +86,7 @@ const Settings = () => {
   const handleDeleteAccount = async () => {
     if (!window.confirm("Are you sure? This action cannot be undone!")) return;
     try {
-      const res = await fetch("http://localhost:5000/api/settings/delete", {
+      const res = await fetch("https://ssc-backend-c1qi.onrender.com/api/settings/delete", {
         method: "DELETE",
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
       });
