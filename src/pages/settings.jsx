@@ -93,7 +93,7 @@ const Settings = () => {
       const data = await res.json();
       alert(data.message);
       localStorage.removeItem("token");
-      window.location.href = "/login";
+      window.location.href = "/";
     } catch (err) {
       console.error(err);
     }
