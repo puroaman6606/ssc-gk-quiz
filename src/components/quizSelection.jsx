@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { syllabus } from "../syllabus"; 
-import Quiz from "./Quiz";
+import Quiz from "./quiz";
 import Sidebar from "./sidebar"; // Make sure the file is named Sidebar.jsx with capital S
 
 function QuizSelection() {
