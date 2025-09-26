@@ -1,5 +1,5 @@
-const API_URL = "https://ssc-gk-quiz-mfep.vercel.app/api"; // backend URL
-
+const API_URL = "https://ssc-backend-c1qi.onrender.com/api"; // backend URL
+                 
 // helper: fetch with error handling
 const request = async (url, options = {}) => {
   const res = await fetch(url, options);
