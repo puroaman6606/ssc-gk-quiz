@@ -125,7 +125,7 @@ import Login from "./components/login";
 import Signup from "./components/signup";
 import QuizSelection from "./components/quizSelection";
 import Quiz from "./components/quiz";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/dashboard";
 import Profile from "./pages/profile";
 import ForgotPassword from "./pages/forgot-password";
 import QuizHistory from "./pages/QuizHistory";
