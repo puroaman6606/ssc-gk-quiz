@@ -254,7 +254,7 @@ function Quiz({ exam, subject, topic }) {
     const token = localStorage.getItem("token"); // JWT stored in localStorage
 
     await axios.post(
-      "http://localhost:5000/api/quiz/save", // matches your quizRoutes
+      "https://ssc-backend-c1qi.onrender.com/api/quiz/save", // matches your quizRoutes
       {
         examType: exam,       // from prop
         subject: subject,     // from prop
