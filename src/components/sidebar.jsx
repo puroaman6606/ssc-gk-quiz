@@ -72,7 +72,7 @@ function Sidebar() {
       </div>
 
       {/* Overlay for small screens */}
-      {sidebarCollapsed && showSidebar && (
+      {sidebarCollapsed && !showSidebar && (
         <div
           className="fixed inset-0 bg-black bg-opacity-20 z-40 md:hidden"
           onClick={() => setSidebarCollapsed(false)}
